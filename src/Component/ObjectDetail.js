@@ -37,9 +37,9 @@ const ObjectDetail = ({ data, liquidDensity }) => {
 
     }
 
-    function checkFloat() {
+    function checkFloat(M, H, W, L) {
 
-        var res = calculateDensity(data.mass, data.height, data.width, data.length)
+        var res = calculateDensity(M, H, W, L)
         if (res < liquidDensity){
             return "Yes"
         }
@@ -64,7 +64,7 @@ const ObjectDetail = ({ data, liquidDensity }) => {
                 <li className="list-group-item">Float = { 
 
                    
-                    checkFloat()
+                    checkFloat( data.mass, data.height, data.width, data.length)
 
                 }
                 </li>

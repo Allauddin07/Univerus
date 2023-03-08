@@ -56,12 +56,12 @@ const ObjectDetail = ({ data, liquidDensity }) => {
     return (
         <div>
             <ul className="list-group">
-                <li className="list-group-item " >name= {data.name}</li>
-                <li className="list-group-item">Dimension= {dimension(data.height, data.width, data.length)}</li>
-                <li className="list-group-item">Mass= {data.mass}</li>
-                <li className="list-group-item">Shape= {checkShape(data.height, data.width, data.length)}</li>
-                <li className="list-group-item">Density= {calculateDensity(data.mass, data.height, data.width, data.length)}</li>
-                <li className="list-group-item">Float= { 
+                <li className="list-group-item " >Name = {data.name}</li>
+                <li className="list-group-item">Dimension = {dimension(data.height, data.width, data.length)}</li>
+                <li className="list-group-item">Mass = {data.mass}</li>
+                <li className="list-group-item">Shape = {checkShape(data.height, data.width, data.length)}</li>
+                <li className="list-group-item">Density = {calculateDensity(data.mass, data.height, data.width, data.length)}</li>
+                <li className="list-group-item">Float = { 
 
                    
                     checkFloat()
